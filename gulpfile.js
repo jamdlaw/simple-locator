@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 var autoprefix = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
 var notify = require('gulp-notify');
