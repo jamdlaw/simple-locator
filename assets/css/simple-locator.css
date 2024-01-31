@@ -23,6 +23,7 @@
 
 .simple-locator-form {
     display:flex;
+    flex-wrap: wrap;
     border: 1px solid green;
 }
 
