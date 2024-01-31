@@ -29,6 +29,8 @@
 .simple-locator-form form {
     margin-bottom: 20px;
     border: 1px solid blue;
+    flex-basis: 100%;
+    flex-shrink:0 ;
 }
 
 .simple-locator-form label {
