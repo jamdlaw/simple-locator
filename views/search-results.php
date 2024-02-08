@@ -4,7 +4,7 @@
 * @todo Page Jump, namespace filters
 */
 $has_results = ( count($this->search_data['results']) < 1 ) ? false : true;
-$output = '<div data-simple-locator-results-wrapper class="wpsl-results non-ajax';
+$output = '<!-- test 55 --><div data-simple-locator-results-wrapper class="wpsl-results non-ajax';
 if ( !$has_results ) $output .= ' wpsl-results-no-results';
 $output .= '" style="display:block;">';
 
