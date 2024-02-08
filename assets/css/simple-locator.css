@@ -328,3 +328,13 @@ img{
 #gc-map-and-results {
     display:flex;
 }
+
+.wpsl-results-wrapper{
+    border: 1px solid green;
+    flex:.7;
+}
+
+.wpsl-map{
+    border: 2px dotted yellow;
+    flex:.2;
+}
