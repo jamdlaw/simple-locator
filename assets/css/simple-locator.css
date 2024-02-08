@@ -281,7 +281,7 @@
     margin: 0 3px
 }
 
-/* styles for golfcaddies website */ 
+/* styles for coursecaddies website */ 
 
 .golf-caddies-logo {
     height: 200px;
@@ -322,4 +322,9 @@
 img{
     height: 200px;
     width: 200px;
+}
+
+/* course caddies non-ajax results styles */
+#gc-map-and-results {
+    display:flex;
 }

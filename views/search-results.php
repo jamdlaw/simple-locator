@@ -16,13 +16,7 @@ if ( $has_results ) :
 	$output .= $this->results_info->resultsHeader();
 	$output .= '<p>' . $this->results_info->newSearchLink() . '</p>';
 	$output .= $this->results_info->currentResultCounts();
-
-	$output .= '<div data-simple-locator-map-non-ajax class="wpsl-map loading"';
-	if ( isset($this->request['mapheight']) && $this->request['mapheight'] !== "" )  $output .= 'style="height:' . $this->request['mapheight'] . 'px;"';
-	$output .= ' data-latitude="' . $this->request['latitude'] . '"';
-	$output .= ' data-longitude="' . $this->request['longitude'] . '"';
-	$output .= '></div><!-- .wpsl-map -->';
-
+	$output .= '<div id="gc-map-and-results" >'; 
 	$results_output = '<div class="wpsl-results-wrapper">';
 	foreach($this->search_data['results'] as $result) :
 		$results_output .= $result['output'];
@@ -36,6 +30,14 @@ if ( $has_results ) :
 	$output .= $this->results_info->goToPage();
 	$output .= $this->results_info->pagePosition();
 	$output .= '</div>';
+
+	$output .= '<div data-simple-locator-map-non-ajax class="wpsl-map loading"';
+	if ( isset($this->request['mapheight']) && $this->request['mapheight'] !== "" )  $output .= 'style="height:' . $this->request['mapheight'] . 'px;"';
+	$output .= ' data-latitude="' . $this->request['latitude'] . '"';
+	$output .= ' data-longitude="' . $this->request['longitude'] . '"';
+	$output .= '></div><!-- .wpsl-map -->';
+	$output .= '</div>';
+
 endif;
 
 $output .= '</div><!-- .wpsl-results -->';
