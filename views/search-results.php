@@ -22,7 +22,7 @@ if ( $has_results ) :
 		//$result['output'] is a html <p> tag
 		$results_output .= $result['output'];
 		$results_output .= '<div>' . get_the_post_thumbnail($result['id']) . '</div>';
-		$results_output .= '<div>' .  do_shortcode( '[site_review post_id="658"]' ) . '</div>';  
+		$results_output .= '<div>' .  do_shortcode( '[site_review post_id="658" hide="assigned_links,author,avatar,content,date,images,response,title"]' ) . '</div>';  
 	endforeach;
 	$results_output .= '</div>';
 	$output .= apply_filters('simple_locator_non_ajax_results_output', $results_output, $this->request, $this->search_data);
