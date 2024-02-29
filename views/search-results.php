@@ -19,10 +19,11 @@ if ( $has_results ) :
 	$output .= '<div id="gc-map-and-results" >'; 
 	$results_output = '<div class="wpsl-results-wrapper">';
 	foreach($this->search_data['results'] as $result) :
+		$results_output .= '<div class="result-block">';
 		$results_output .= '<div>' . get_the_post_thumbnail($result['id']) . '</div>';
-		//$result['output'] is a html <p> tag
 		$results_output .= $result['output'];
-		$results_output .= '<div>' .  do_shortcode( '[site_review post_id="658" hide="assigned_links,author,avatar,content,date,images,response,title"]' ) . '</div>';  
+		$results_output .= '<div>' .  do_shortcode( '[site_review post_id="1" hide="assigned_links,author,avatar,content,date,images,response,title"]' ) . '</div>';  
+		$results_output .= '</div>';
 	endforeach;
 	$results_output .= '</div>';
 	$output .= apply_filters('simple_locator_non_ajax_results_output', $results_output, $this->request, $this->search_data);

@@ -338,3 +338,7 @@ img{
     border: 2px dotted yellow;
     flex:.2;
 }
+
+.result-block{
+    display: flex;
+}
